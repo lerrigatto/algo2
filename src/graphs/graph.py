@@ -1,22 +1,21 @@
 class Graph:
     """A graph interface"""
-    def __init__(self, nodes, archs):
-        """ Initialize the graph with a set of nodes and archs"""
+    def __init__(self, vertex, edges):
+        """ Initialize the graph with a set of vertexes and edges"""
+
+    def add_vertex(self, vertex):
+        """ Add one vertex to the graph"""
         pass
 
-    def addNode(self, node):
-        """ Add one node to the graph"""
+    def add_edge(self, vertex1, vertex2):
+        """ Add one edge between two vertexes"""
         pass
 
-    def addArch(self, node1, node2):
-        """ Add one arch between two nodes"""
+    def degree(self, vertex):
+        """ The degree of the vertex"""
         pass
 
-    def degree(self, node):
-        """ The degree of the node"""
-        pass
-
-    def adj(self, node):
-        """ Return the set of nodes adjacent to `node`"""
+    def adj(self, vertex):
+        """ Return the set of vertexs adjacent to `vertex`"""
         pass
 
