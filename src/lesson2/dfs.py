@@ -11,27 +11,7 @@ def iter_dfs(G,u):
         from a given root. The content of the stack is also called walk.
         The output is stored in a list.
     """
-    visited = []
-    visited_edges = []
-    walk = []
-    visited.append(u)
-    walk.insert(0,u)
-
-    while len(walk) > 0:
-        v = walk.pop()
-        adj = G.successors(v)
-        print(f"v:{v}, adj:{list(G.successors(v))}")
-        if adj:
-            for w in adj:
-                if w not in visited:
-                    visited.append(w)
-                    visited_edges.append((v,w))
-                    walk.insert(0,w)
-
-        else:
-            print(f"else")
-            walk.pop()
-    return visited_edges
+    pass
 
 def dfsr(G,u,visited,visited_edges):
     adj = G.successors(u)
