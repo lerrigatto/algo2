@@ -1,5 +1,5 @@
-# Dato n, si stampino tutte le matrici di interi n x n tali che
-# le righe e le colonne della matrice siano in ordine crescente
+# Dato n, si stampino tutte le matrici binarie n x n tali che
+# non appaiano mai due 1 adiacenti in orizzontale, verticale, diagonale
 
 def print_matr(M):
     for line in M:
@@ -19,7 +19,7 @@ def stampa_bt(n, M, i=0, j=0, c=0):
             else:
                 stampa_bt(n,M,i+1,0)
         else:
-            for x in range(1,n+2):
+            for x in [0,1]:
                 # Nella posizione 0,0 non ho vicini da controllare
                 if i==0 and j==0:
                     stampa_bt(n,M,i,j,x)
